@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.blog-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Images/blog.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: rgb(212, 203, 203);
+}
+.hero p{
+    color: blueviolet;
+    font-size: 2.4rem;
+    font-weight: 600;
+
+}
+
+.hero a{
+    color: #fff;
+    background-color: blueviolet;
+    padding: 10px 25px;
+    border-radius: 22px;
+    transition: transform .4s;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+.blog-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.blog-head h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: bold;
+}
+
+.post-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.post-box{
+    background-color: #fff;
+    border: 1px solid #ececec;
+    margin: 20px;
+    width: 400px;
+    
+    
+}
+.post-img{
+    width: 100%;
+    height: auto;
+}
+
+.post-img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.post-text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.post-text span{
+    color: #f33cf3;
+    font-size: 0.9rem;
+}
+.post-title{
+    color: #272727;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+.post-title:hover{
+    color: red;
+    transition: all ease 0.3s;
+}
+
+.post-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    margin: 20px 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.post-text a{
+    color: #0f0f0f;
+}
+.post-text a:hover{
+    color: #f33cf3;
+    transition: all ease 0.3s;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f0f0f;
+    font-size: 1rem;
+    transition: all ease 0.3s;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 1250px) {
+    .post-box{
+        width: 300px;
+    }
+}
+@media (max-width: 550px) {
+    .post-box{
+    width: 100%;
+    }
+    
+}

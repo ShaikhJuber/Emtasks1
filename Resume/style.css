@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding-top: 20px;
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px 25px;
+    list-style: none;
+}
+
+@media (max-width: 660px) {
+    nav ul li{
+        display: none;
+    }
+}
+nav ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+}
+h2{
+    color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+    color: blueviolet;
+}
+.btn{
+    color: #fff;
+    background-color: blueviolet;
+    padding: 10px 25px;
+    border-radius: 22px;
+    transition: transform .4s;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn:hover{
+	transform: scale(1.1);
+}
+.content{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+h1{
+    color: #fff;
+    font-size: 70px;
+    margin: 20px 0px 20px;
+}
+span{
+    color: blueviolet;
+}
+h3{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 25px;
+
+}
+h4{
+    color: #fcfc;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.hire-btn{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: blueviolet;
+    border-radius: 22px;
+}
+
+
+@media (max-width: 660px) {
+   h1{
+    font-size: 34px;
+   }
+   h2{
+    font-size: 18px;
+   }
+   h3{
+    font-size: 12px;
+   }
+   .btn{
+    padding: 8px 13px;
+    font-size: 12px;
+   }
+}
+
+
+
+.about{
+    background-color: #fff;
+    width: 100%;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+.about-text{
+   padding: 22px; 
+    
+}
+.about-text h2{
+    color: #000;
+    font-size: 46px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.about-text h5{
+    font-size: 24px;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+}
+.about-text p{
+    color: black;
+	letter-spacing: 1px;
+    font-size: 18px;
+	margin-bottom: 18px;
+}
+.about-text button{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 1px solid blueviolet;
+    border-radius: 22px;
+}
+.about-text button:hover{
+    background-color: blueviolet;
+    border: none;
+    color: #fff;
+}
+
+@media (max-width: 660px) {
+    .main{
+       flex-direction: column;
+    }
+    .main img{
+        width: 100%;
+    }
+    .about-text{
+        padding: 12px;
+    }
+    .about-text p{
+        font-size: 12px;
+    }
+    .about-text h2{
+        font-size: 36px;
+    }
+   }
+
+
+
+
+.service{
+    background-color: #101010;
+    width: 100%;
+    height:100%;
+}
+.title h2{
+    color: blueviolet;
+	font-size: 56px;
+    padding-top: 22px;
+	text-align: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+}
+.card{
+    padding: 20px 35px;
+	background: #fcfcfc;
+	border-radius: 20px;
+    margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i {
+    color: #000;
+}
+.card h5{
+    color: #000;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.para p{
+    color: black;
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+
+.readbtn{
+    background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .readbtn:hover{
+	background-color: transparent;
+    color: red;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+
+@media (max-width: 554px) {
+    .service{
+       
+    }
+    .title h2{
+        font-size: 38px;
+    }
+    .box{
+        flex-direction: column;
+    }
+    .card{
+        padding: 10px 25px;
+    }
+    .readbtn{
+        font-size: 12px;
+    }
+   }
+
+
+
+
+
+
+
+.contact{
+    display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #fcfc;
+
+}
+.contact p{
+    color: black;
+	font-size: 30px;
+	font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.connbtn:hover{
+    background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+@media (max-width: 660px) {
+    .contact p{
+        font-size: 22px;
+        text-align: center;
+    }
+    
+}
+
+
+
+footer{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    width: 100%;
+	height: 260px;
+	background: #101010;
+	
+}
+
+footer p:nth-child(1){
+	font-size: 30px;
+	color: white;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+footer p:nth-child(2){
+    color: white;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.icons{
+    display: flex;
+}
+.icons a{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    margin: 22px 10px;
+    color: #fff;
+    background:  #f9004d;
+    width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	text-decoration: none;
+	font-size: 20px;
+}
+.copy{
+    margin-bottom: 20px;
+    color: blueviolet;
+	font-size: 14px; 
+}
+
+@media (max-width: 660px) {
+    footer p:nth-child(1){
+        font-size: 12px ;
+    }
+
+    footer p:nth-child(2){
+        font-size: 12px;
+    }
+    
+}
